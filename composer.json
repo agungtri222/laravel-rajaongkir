@@ -1,0 +1,58 @@
+{
+    "name": "agung/laravel-rajaongkir",
+    "description": "RajaOngkir larvel request wrapper",
+    "keywords": [
+        "laravel",
+        "rajaongkir",
+        "wrapper",
+        "API"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "agung trilaksono",
+            "email": "agungtrilaksono123@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "6.*",
+        "illuminate/contracts": "5.5.*",
+        "illuminate/support": "5.5.*",
+        "illuminate/validation": "5.5.*",
+        "psr/http-message": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+          "Agungtri222\\RajaOngkir\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Agungtri222\\RajaOngkir\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+          "providers": [
+            "Agungtri222\\RajaOngkir\\Providers\\RajaOngkirServiceProvider"
+          ],
+          "aliases": {
+            "RajaOngkir": "Agungtri222\\RajaOngkir\\Facades\\RajaOngkir"
+          }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require-dev": {
+        "fzaninotto/faker": "1.*",
+        "orchestra/testbench": "3.*",
+        "phpunit/phpunit": "6.*"
+    }
+}
