@@ -16,7 +16,7 @@ _Laravel RajaOngkir API package._
 Require this package with composer using the following command:
 
 ```bash
-composer require agung/laravel-rajaongkir
+composer require agungtri222/laravel-rajaongkir
 ```
 
 ## Configuration
