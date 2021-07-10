@@ -15,6 +15,9 @@ class RajaOngkirServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // merge package configuration
+        $this->mergeConfigFrom(__DIR__.'/../config/rajaongkir.php', 'rajaongkir');
+
         $this->app->singleton('RajaOngkir', function() {
             return true;
         });
